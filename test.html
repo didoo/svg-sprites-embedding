@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Test original sample</title>
+
+    <style>
+        .icon {
+            width: 100px;
+            height: 100px;
+            border: 1px dotted #E4E4E4;
+            fill: magenta;
+        }
+        .icon-1 { fill: cyan; }
+        .icon-2 { fill: green; }
+        .icon-3 { fill: yellow; }
+        .icon-4 { fill: blue; }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is inline SVG with &lt;use&gt; linking to an external resource. It works even in IE 9, 10, and 11 because of <a href="https://github.com/jonathantneal/svg4everybody">SVG for Everybody</a>.</h1>
+
+    <svg viewBox="0 0 32 32" class="icon icon-1">
+        <use xlink:href="sample/sample-sprites.svg#icon-undo"></use>
+    </svg>
+
+    <svg viewBox="0 0 32 32" class="icon icon-2">
+        <use xlink:href="sample/sample-sprites.svg#icon-redo"></use>
+    </svg>
+
+    <svg viewBox="0 0 32 32" class="icon icon-3">
+        <use xlink:href="sample/sample-sprites.svg#icon-forward"></use>
+    </svg>
+
+    <svg viewBox="0 0 32 32" class="icon icon-4">
+        <use xlink:href="sample/sample-sprites.svg#icon-reply"></use>
+    </svg>
+
+    <script src="sample/svg4everybody.js"></script>
+
+</body>
+
+</html>

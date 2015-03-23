@@ -79,7 +79,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js"></script>
     <script>
         $(function() {
-            $.get("http://s3-eu-west-1.amazonaws.com/plentific-b2b/images/b2b/icons/sprite-ffc90364.svg", function(data) {
+            $.get("http://s3-eu-west-1.amazonaws.com/plentific-dev/images/b2b/icons/sprite-ffc90364.svg", function(data) {
                 var div = document.createElement("div");
                 div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
                 document.body.insertBefore(div, document.body.childNodes[0]);
